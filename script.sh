@@ -18,10 +18,10 @@ insert_system_users()
                 shell VARCHAR(30),
                 taille VARCHAR(50),
                 fingerprint VARCHAR(50));"
-    
+
     #A utiliser pour supprimer la table:
     queryDELETE="DROP TABLE users;"
-   
+    mysql -h "$hote_db" -u "$login_db" -D "$nom_db" -e "$queryDELETE"
     mysql -h "$hote_db" -u "$login_db" -D "$nom_db" -e "$query1"
     mysql -h "$hote_db" -u "$login_db" -D "$nom_db" -e "$query2"
 
@@ -33,10 +33,15 @@ do
     uid=$(cut -d: -f2 /tmp/tmpfile)
     gid=$(cut -d: -f3 /tmp/tmpfile)
     shell=`cut -d: -f5 /tmp/tmpfile`
+    
+    if [ -d $home ]
+    then
+	taille=$(du -s $home 2>/dev/null)
+        fingerprint=$(tar c $home | md5sum)
+    fi
 
     if [[ -z "$(userExistinDB $uid)" ]]
     then
-	echo "J'ajoute l'user $uid dans la bdd"
         query3="insert into users values ('$uid', '$nom', '$gid', '$home', '$shell', '$taille', '$fingerprint')"
 	mysql -h "$hote_db" -u "$login_db" -D "$nom_db" -e "$query3"
     fi
