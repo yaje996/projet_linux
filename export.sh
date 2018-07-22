@@ -7,6 +7,10 @@ login_db="root"
 nom_db="projet_linux"
 nom_table="users"
 
+HOST=raphaeldulong.com
+USER=raphael
+PASS=esgi2018
+
 insert_system_users()
 {
     query1="CREATE DATABASE IF NOT EXISTS projet_linux;"
@@ -58,7 +62,20 @@ do
         query3="insert into users values ('$uid', '$nom', '$gid','$gname', '$home', '$shell', '$taille', '$first_fingerprint')"
 	mysql -h "$hote_db" -u "$login_db" -D "$nom_db" -e "$query3"
     fi
+: '
+echo $home
+zip -r $nom.zip $home
+$(sleep 3)
+#export du home zipé sur ftp
+echo "
+open raphaeldulong.com
+user $USER $PASS
+put $nom.zip
+bye
+"| ftp -n > ftp_$$.log
 
+rm $nom.zip
+'
 done
 }
 
@@ -75,4 +92,3 @@ userExistinDB()
 #userExistinDB 100000
 insert_system_users
 rm /tmp/tmpfile
-

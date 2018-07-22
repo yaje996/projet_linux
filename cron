@@ -1,0 +1,2 @@
+chmod +x script.sh
+01 * * * * /root/projet_linux/projet_linux/le_script.sh
