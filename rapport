@@ -1,0 +1,49 @@
+Jul 17 00:28:56 deb root[/home/yannj-a] : emacs /etc/bash.bashrc
+Jul 17 00:28:56 deb root[/home/yannj-a] : source /etc/bash.bashrc
+Jul 17 00:47:46 deb yannj-a[/home/yannj-a] : su
+Jul 17 00:48:22 deb yannj-a[/home/yannj-a] : cat /etc/passwd
+Jul 17 00:49:28 deb tata[/home/tata] : je sui venu tout seul j'ai pas besoin d'aide
+Jul 17 01:05:41 deb yannj-a[/home/tata] : cat /etc/passwd
+Jul 17 01:06:19 deb yannj-a[/home/tata] : emacs /etc/passwd
+Jul 17 01:09:14 deb tata[/home/tata] : su yannj-a
+Jul 17 01:09:14 deb yannj-a[/home/yannj-a] : su tata
+Jul 17 01:09:14 deb root[/root] : su yannj-a
+Jul 17 01:22:56 deb root[/home/yannj-a] : cat /etc/
+Jul 17 01:57:22 deb root[/home/yannj-a] : su tat
+Jul 17 02:18:21 deb root[/root] : chmod 755 test.sh
+Jul 17 02:20:38 deb root[/home/yannj-a] : tail -n 100 /var/log/messages | grep /etc
+Jul 17 02:33:06 deb root[/home/yannj-a] : tail -n 100 /var/log/messages | grep /etc
+Jul 17 11:14:54 deb root[/root] : chmod 755 para.sh
+Jul 17 12:50:21 deb root[/root] : cat /etc/shadow
+Jul 17 14:47:07 deb root[/root] : cat tt | grep /etc
+Jul 17 14:49:57 deb root[/root] : cat tt | grep /etc
+Jul 17 14:57:25 deb root[/root] : cat tt | egrep 'passwd|etc|cat|su'  | less
+Jul 17 15:22:08 deb root[/root] : cat tt | egrep 'passwd|etc'
+Jul 17 15:23:22 deb root[/root] : cat /var/log/messages > tt | egrep 'passwd|etc|su' | less
+Jul 17 15:23:33 deb root[/root] : cat /var/log/messages > tt | egrep 'passwd|etc|su' | less
+Jul 17 15:23:39 deb root[/root] : cat /var/log/messages > tt | egrep 'passwd|etc|su'
+Jul 17 15:24:15 deb root[/root] : cat /var/log/messages > tt | egrep 'passwd|etc|su'
+Jul 17 15:28:32 deb root[/root] : cat /var/log/messages | egrep '/etc|passwd|aptitude|install|su|sudo|/etc/shadow|export|kill|userdel|wget|ssh|chgrp|chown|chmod|root|env|path|root\
+Jul 17 15:29:19 deb root[/root] : cat /var/log/messages | egrep '/etc|passwd|aptitude|install|su|sudo|/etc/shadow|export|kill|userdel|wget|ssh|chgrp|chown|chmod|root|env|path|root'
+Jul 17 15:31:33 deb root[/root] : cat /var/log/messages | egrep '/etc|passwd|aptitude|install|su|sudo'
+Jul 17 15:31:54 deb root[/root] : cat /var/log/messages | egrep '/etc|passwd|aptitude|install|su|sudo' | less
+Jul 17 15:32:28 deb root[/root] : tail -n 500 /var/log/messages | egrep '/etc|passwd|aptitude|install|su|sudo' | less
+Jul 17 15:32:39 deb root[/root] : tail -f /var/log/messages | egrep '/etc|passwd|aptitude|install|su|sudo' | less
+Jul 17 15:32:51 deb root[/root] : tail -f /var/log/messages | egrep '/etc|passwd|aptitude|install|su|sudo'
+Jul 17 16:08:13 deb yannj-a[/home/yannj-a] : cat /etc/passw
+Jul 17 16:08:15 deb yannj-a[/home/yannj-a] : cat /etc/passwd
+Jul 17 16:22:14 deb root[/root] : egrep '/etc/|passwd|useradd|adduser|rm *|root' rapport
+Jul 17 16:22:20 deb root[/root] : egrep '/etc/|passwd|useradd|adduser|rm *|root' rapport
+Jul 17 16:22:31 deb root[/root] : grep '/etc/|passwd|useradd|adduser|rm *|root' rapport
+Jul 17 16:22:32 deb root[/root] : grep '/etc/|passwd|useradd|adduser|rm *|root' rapport
+Jul 17 16:22:45 deb root[/root] : grep '/etc/|passwd|useradd|adduser|rm *|root' rapport
+Jul 17 19:38:08 deb root[/root] : emacs /etc/bash.bashrc
+Jul 19 00:30:52 deb yannj-a[/home/yannj-a] : sudo mv tp_final/ /var/www/html/
+Jul 21 12:01:49 deb yannj-a[/home/yannj-a/Cours/Linux] : apt-get install git
+Jul 21 12:01:58 deb yannj-a[/home/yannj-a/Cours/Linux] : sudo apt-get install git
+Jul 21 12:06:53 deb yannj-a[/home/yannj-a/Cours/Linux/projet/projet_linux] : emacs export.sh
+Jul 21 12:07:36 deb yannj-a[/home/yannj-a/Cours/Linux/projet/projet_linux] : su
+Jul 21 12:18:35 deb root[/home/yannj-a/Cours/Linux/projet/projet_linux] : rm \#export.sh#
+Jul 21 13:14:26 deb root[/home/yannj-a/Cours/Linux/projet/projet_linux] : egrep '/etc|passwd|aptitude|install|su|sudo|/etc/shadow/|export|chmod|chown|env\
+Jul 21 13:14:26 deb root[/home/yannj-a/Cours/Linux/projet/projet_linux] : |export' /tmp/rapport.txt > rapport
+Jul 21 13:20:34 deb root[/home/yannj-a/Cours/Linux/projet/projet_linux] : egrep '/etc|passwd|aptitude|install|su|sudo|/etc/shadow/|export|chmod|chown|env|export' /tmp/rapport.txt > rapport
