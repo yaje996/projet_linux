@@ -62,20 +62,20 @@ do
         query3="insert into users values ('$uid', '$nom', '$gid','$gname', '$home', '$shell', '$taille', '$first_fingerprint')"
 	mysql -h "$hote_db" -u "$login_db" -D "$nom_db" -e "$query3"
     fi
-: '
+#: '
 echo $home
 zip -r $nom.zip $home
-$(sleep 3)
 #export du home zipé sur ftp
 echo "
 open raphaeldulong.com
 user $USER $PASS
+binary
 put $nom.zip
 bye
 "| ftp -n > ftp_$$.log
 
-rm $nom.zip
-'
+#rm $nom.zip
+#'
 done
 }
 
